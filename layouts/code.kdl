@@ -1,10 +1,31 @@
 layout {
-    pane size=1 borderless=true {
-        plugin location="zellij:tab-bar"
+    tab name="code" {
+        pane size=1 borderless=true {
+            plugin location="zellij:tab-bar"
+        }
+        pane name="editor"
+        pane size="20%"
+        pane size=1 borderless=true {
+            plugin location="zellij:status-bar"
+        }
     }
-    pane command="nvim"
-    pane size="20%"
-    pane size=1 borderless=true {
-        plugin location="zellij:status-bar"
+    tab name="git" {
+        pane size=1 borderless=true {
+            plugin location="zellij:tab-bar"
+        }
+        pane command="lazygit"
+        pane size=1 borderless=true {
+            plugin location="zellij:status-bar"
+        }
+    }
+
+    tab name="term" {
+        pane size=1 borderless=true {
+            plugin location="zellij:tab-bar"
+        }
+        pane
+        pane size=1 borderless=true {
+            plugin location="zellij:status-bar"
+        }
     }
 }
