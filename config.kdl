@@ -146,7 +146,6 @@ keybinds {
     }
     shared {
         bind "Ctrl g" { SwitchToMode "Locked"; }
-        bind "Alt q" { Quit; }
         bind "Alt n" { NewPane; }
         bind "Alt h" "Alt Left" { MoveFocusOrTab "Left"; }
         bind "Alt l" "Alt Right" { MoveFocusOrTab "Right"; }
