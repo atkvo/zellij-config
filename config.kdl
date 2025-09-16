@@ -3,10 +3,10 @@ keybinds clear-defaults=true {
     normal {
         // uncomment this and adjust key if using copy_on_select=false
         // bind "Alt c" { Copy; }
-        bind "Alt b" { SwitchToMode "Locked"; }
+        bind "Alt B" { SwitchToMode "Locked"; }
     }
     locked {
-        bind "Alt b" { SwitchToMode "Normal"; }
+        bind "Alt B" { SwitchToMode "Normal"; }
     }
     resize {
         bind "Ctrl n" { SwitchToMode "Normal"; }
@@ -146,16 +146,16 @@ keybinds clear-defaults=true {
         bind "x" { CloseFocus; SwitchToMode "Normal"; }
     }
     shared {
-        bind "Alt n" { NewPane; }
-        bind "Alt h" "Alt Left" { MoveFocusOrTab "Left"; }
-        bind "Alt l" "Alt Right" { MoveFocusOrTab "Right"; }
-        bind "Alt j" "Alt Down" { MoveFocus "Down"; }
-        bind "Alt k" "Alt Up" { MoveFocus "Up"; }
+        bind "Alt N" { NewPane; }
+        bind "Alt H" "Alt Left" { MoveFocusOrTab "Left"; }
+        bind "Alt L" "Alt Right" { MoveFocusOrTab "Right"; }
+        bind "Alt J" "Alt Down" { MoveFocus "Down"; }
+        bind "Alt K" "Alt Up" { MoveFocus "Up"; }
         bind "Alt =" "Alt +" { Resize "Increase"; }
         bind "Alt -" { Resize "Decrease"; }
         bind "Alt [" { PreviousSwapLayout; }
         bind "Alt ]" { NextSwapLayout; }
-        bind "Alt w" { ToggleFloatingPanes; }
+        bind "Alt W" { ToggleFloatingPanes; }
     }
     shared_except "normal" "locked" {
         bind "Enter" "Esc" { SwitchToMode "Normal"; }
